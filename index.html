@@ -378,6 +378,17 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wraper">
+          <p class="social-text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <label for="Email">
+            <input class="form-item" type="Email" id="Email"  name="E-mail" placeholder="E-mail">
+            </label>
+            <button class="footer-btn" type="submit">
+              Підписатися</button>
+          </form>
+
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -387,6 +398,40 @@
             <use href="./images/icons.svg#icon-btnclose"></use>
           </svg>
         </button>
+       
+        <form class="form" name="signup" autocomplete="on" novalidate>
+          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="modal__line_title" for="Login">
+            Ім'я 
+          </label>
+          <input class="modal__input_line" type="text" id="Login" name="Login" autofocus placeholder="" />
+
+          <label class="modal__line_title" for="tel">
+            Телефон  
+          </label>
+          <input class="modal__input_line" id="tel" type="tel" name="tel" placeholder="" />
+
+          <label class="modal__line_title" for="mail">
+            Email  
+          </label>
+          <input class="modal__input_line" type="email" name="Email" id="mail" placeholder="" />
+
+
+          <label  class="modal__line_title" for="comment">
+            Коментар
+          </label>
+          <textarea class="modal__textarea" name="comment" id="comment"  rows="10"      placeholder="Введіть текст"></textarea>
+
+          <div class="policy-wraper">
+            <input class="policy__checkbox" type="checkbox" name="privacy-policy" id="checkbox">
+            <label for="checkbox">
+              Погоджуюся з розсилкою та приймаю  
+            </label>
+            <a class="policy_link" href="http://">Умови договору</a>
+
+          </div>
+          <button class="modal__btn_main">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
